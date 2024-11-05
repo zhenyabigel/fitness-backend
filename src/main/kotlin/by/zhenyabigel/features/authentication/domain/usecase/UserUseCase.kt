@@ -10,7 +10,7 @@ class UserUseCase(
     private val jwtService: JwtService
 ) {
 
-    suspend fun createUser(userModel: UserModel) = repositoryImpl.insertUser(userModel =  userModel)
+    suspend fun createUser(userModel: UserModel) = repositoryImpl.insertUser(user =  userModel)
 
     suspend fun findUserByEmail(email: String) = repositoryImpl.getUserByEmail(email = email)
 
