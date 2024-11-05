@@ -5,7 +5,7 @@ import org.jetbrains.exposed.sql.Table
 
 object DishTable:Table() {
     val id: Column<Int> = integer("id").autoIncrement()
-    val name: Column<String> = varchar("name", 255)
+    val name: Column<String> = varchar("name", 255).uniqueIndex()
     val calories: Column<Int> = integer("calories")
     val protein: Column<Double> = double("protein")
     val fat: Column<Double> = double("fat")

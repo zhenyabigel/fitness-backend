@@ -19,7 +19,7 @@ class DishUseCase(
         dishRepository.updateDish(dish = dish, dishId = dishId)
     }
 
-    suspend fun deleteCard(dishId: Int) {
+    suspend fun deleteDish(dishId: Int) {
         dishRepository.deleteDish(dishId = dishId)
     }
 }
