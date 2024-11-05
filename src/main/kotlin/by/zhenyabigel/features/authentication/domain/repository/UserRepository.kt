@@ -6,5 +6,5 @@ interface UserRepository {
 
     suspend fun getUserByEmail(email: String): UserModel?
 
-    suspend fun insertUser(userModel: UserModel)
+    suspend fun insertUser(user: UserModel)
 }

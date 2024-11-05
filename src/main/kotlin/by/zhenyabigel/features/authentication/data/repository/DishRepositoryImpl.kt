@@ -51,7 +51,7 @@ class DishRepositoryImpl : DishRepository {
 
     override suspend fun deleteDish(dishId: Int) {
         dbQuery {
-            DishTable.deleteWhere { DishTable.id.eq(dishId) }
+            DishTable.deleteWhere { id.eq(dishId) }
         }
     }
 
